@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google" content="notranslate">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/1.png" type="images/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encyklopedia</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="name_str" href="index.html"><div class="name"><p>Encyklopedia</p></div></a>    
+
+            <div class="menu">
+                <ul class="menu_articles">   <!-- dropdown menu -->
+                    <li class="dropdown">
+                        <p>artykuły</p>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">nowe</a></li>
+                            <li><a href="index.html">polecane</a></li>
+                            <hr>
+                            <li><a href="napisz_art.html">napisz artykuł</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#" onclick="kontakt()">kontakt</a>
+
+                <div class="search_div">    <!-- wyszukiwarka -->
+                    <div class="search_img"></div>
+                    <input type="search" placeholder="Szukaj..." id="search">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="tytul">Polecane</h1>
+
+    <div id="content">
+        <div class="historia_intrnetu">
+            <h1>Historia interneru</h1>
+
+            <h2 style="margin-top: 0;">Początki</h2>
+            <p>Rozwój Internetu rozpoczął się w 1969 roku wraz z uruchomieniem projektu ARPANET, stworzonego przez agencję ARPA (Advanced Research Projects Agency) 
+                w Stanach Zjednoczonych. Projekt miał na celu stworzenie odpornej na awarie sieci komunikacyjnej dla wojska.Pierwsze połączenie między komputerami zostało nawiązane 
+                29 października 1969 roku, między Uniwersytetem Kalifornijskim w Los Angeles (UCLA) a Stanford Research Institute (SRI).</p>
+            
+            <h2>Rozwój</h2>
+            <p>W latach 80. opracowano protokół TCP/IP, który stał się podstawą działania współczesnego Internetu. W 1983 roku ARPANET oficjalnie przeszedł na protokół TCP/IP, co umożliwiło lepszą komunikację między różnymi sieciami.
+
+                W 1989 roku Tim Berners-Lee, pracując w CERN, zaproponował stworzenie systemu hipertekstowego, który stał się podstawą sieci WWW (World Wide Web). Pierwsza strona internetowa powstała w 1991 roku.</p>
+            
+            <h2>Współczesność</h2>
+            <p>Obecnie Internet jest podstawą komunikacji, edukacji, handlu i rozrywki. Obejmuje miliardy stron internetowych i urządzeń podłączonych do sieci. Technologie takie jak media społecznościowe, sztuczna inteligencja i Internet rzeczy (IoT) kontynuują jego rozwój.</p>
+        
+            <h2>Znaczenie</h2>
+            <p>Internet zrewolucjonizował sposób, w jaki ludzie komunikują się, pracują i uzyskują informacje. Stał się nieodłącznym elementem współczesnego życia.</p>
+        </div>
+        <div class="historia_komputera">
+            <h1>Historia Komputerów</h1>
+
+            <p><p style="font-weight: bold;">Historia komputera</p> to proces rozwoju maszyn obliczeniowych, które stały się fundamentem współczesnych technologii informacyjnych. Rozwój komputerów miał kluczowe znaczenie dla postępu nauki, przemysłu oraz społeczeństwa, umożliwiając rozwiązanie złożonych problemów matematycznych, automatyzację procesów oraz zmiany w codziennym życiu.
+            <p style="font-weight: bold; margin-top: 8px;">Prehistoria komputerów</p>
+                
+                Pierwsze urządzenia obliczeniowe powstały w starożytności. Wśród nich można wymienić abacus, który służył do wykonywania prostych obliczeń, oraz różne rodzaje mechanicznych kalkulatorów, jak maszyna różnicowa Charlesa Babbage'a. Choć te urządzenia były bardzo ograniczone w swoich możliwościach, stanowiły fundament do rozwoju późniejszych technologii obliczeniowych.
+                <p style="font-weight: bold; margin-top: 8px;">Pierwsze maszyny obliczeniowe</p>
+                
+                Charles Babbage, brytyjski matematyk i inżynier, uznawany jest za jednego z pionierów komputerów. Jego maszyna różnicowa, skonstruowana w latach 30. XIX wieku, miała na celu automatyzację obliczeń matematycznych. Mimo że nigdy nie została ukończona, jego koncepcje miały wpływ na późniejsze projekty komputerowe.
+                
+                Innym ważnym osiągnięciem z tego okresu była maszyna analityczna, również zaprojektowana przez Babbage'a, która była pierwszym mechanizmem, który spekulował na temat uniwersalnego komputera. Zawierała wszystkie podstawowe elementy nowoczesnych komputerów: procesor, pamięć i urządzenie wejścia/wyjścia.</p>
+        </div>
+    </div>
+
+
+    <footer><p>Strona testowa</p></footer>
+</body>
+</html>

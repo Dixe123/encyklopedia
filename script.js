@@ -1,0 +1,3 @@
+function kontakt(){
+    alert("text")
+}

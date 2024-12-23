@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    color: #333;
+}
+
+
+
+/* HEADER */
+header{
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.411);
+}
+
+/* napis wikipedia */
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+.name > p{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+.name_str{
+    text-decoration: none;
+}
+
+/* menu */
+.menu{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    background: #444;
+}
+.menu > .search_div{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 13px;
+}
+.menu input{
+    right: 13px;
+    height: 30px;
+}
+.menu input:focus{
+    outline: 1px solid white;
+}
+.search_img{
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/1.png);
+    background-size: 100%;
+}
+.menu a,ul{
+    color: white;
+    font-size: 20px;
+    padding: 13px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu > a:hover{
+    background: #555;
+}
+
+
+/*DROP DOWN MENU*/
+.menu_articles hr{
+    color: white;
+}
+.menu_articles{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+.menu_articles > li{
+    position: relative;
+}
+.menu_articles > li > a{
+    display: block;
+    color: white;
+}
+.dropdown > p{
+    color: white;
+    padding: 13px;
+}
+.dropdown-menu{     /*  nowe "ul"  */
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    display: none;
+    width: 150px;
+}
+.dropdown-menu > li > a{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu_articles > .dropdown:hover > .dropdown-menu{
+    display: block;
+}
+
+.menu_articles > li:hover{
+    background: #555;
+}
+.menu_articles > .dropdown > .dropdown-menu > li:hover{
+    background-color: #555;
+}
+
+
+/* TYTUŁ */
+.tytul{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+}
+#content > .historia_intrnetu,.historia_komputera{
+    padding: 8px;
+    margin: 3px;
+    width: 50%;
+    height: fit-content;
+    border: 2px solid #333;
+}
+#content h1{
+    text-align: center;
+}
+.historia_intrnetu > h2{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 25px;
+    background: #444;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer > p{
+    color: white;
+    font-size: 17px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1098px) {
+    #content{
+        flex-direction: column;
+    }
+    #content > .historia_intrnetu,.historia_komputera{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    footer{
+        display: none;
+    }
+    .search_div,.search_div > input{
+        display: none;
+    }
+}
